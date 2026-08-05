@@ -1,8 +1,8 @@
 /* ========================================
-   Design System — Black & Rich Cyan (Pure White Light Mode)
+   Design System — Black & Accent #04346c (Soft Gray Light Mode)
    ======================================== */
 
-/* Dark Mode (Default) — Pure Black & Deep Rich Cyan */
+/* Dark Mode (Default) — Pure Black & Accent #04346c */
 :root, [data-theme="dark"] {
   --bg-primary: #050505;
   --bg-secondary: #0d0d0d;
@@ -11,43 +11,43 @@
   --bg-navbar: rgba(5, 5, 5, 0.95);
 
   --border-color: #222222;
-  --border-hover: #00c4df;
+  --border-hover: #04346c;
 
   --text-primary: #f8fafc;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
 
-  --accent-primary: #00c4df;      /* Rich Deep Cyan */
-  --accent-hover: #00a5bd;
-  --accent-light: rgba(0, 196, 223, 0.12);
-  --accent-glow: rgba(0, 196, 223, 0.25);
+  --accent-primary: #04346c;      /* #04346c Accent */
+  --accent-hover: #02234b;
+  --accent-light: rgba(4, 52, 108, 0.2);
+  --accent-glow: rgba(4, 52, 108, 0.35);
 
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 15px rgba(0, 196, 223, 0.2);
+  --shadow-glow: 0 0 15px rgba(4, 52, 108, 0.25);
 }
 
-/* Light Mode — Pure Full White Background & Crisp Dark Text */
+/* Light Mode — Soft Gray Background & Accent #04346c */
 [data-theme="light"] {
-  --bg-primary: #ffffff;          /* Pure full white */
-  --bg-secondary: #ffffff;        /* Pure full white */
-  --bg-card: #ffffff;             /* Pure full white card */
+  --bg-primary: #f1f5f9;          /* Soft Gray background (Not White) */
+  --bg-secondary: #e2e8f0;        /* Soft Gray secondary */
+  --bg-card: #ffffff;             /* Card background */
   --bg-card-hover: #f8fafc;
-  --bg-navbar: rgba(255, 255, 255, 0.98);
+  --bg-navbar: rgba(241, 245, 249, 0.95);
 
-  --border-color: #e2e8f0;        /* Subtle clean border */
-  --border-hover: #0284c7;
+  --border-color: #cbd5e1;        /* Soft Gray border */
+  --border-hover: #04346c;
 
-  --text-primary: #09090b;        /* Crisp dark text */
+  --text-primary: #0f172a;        /* Dark slate text */
   --text-secondary: #475569;
   --text-muted: #64748b;
 
-  --accent-primary: #0284c7;      /* Rich Deep Cyan for Light Mode */
-  --accent-hover: #0369a1;
-  --accent-light: rgba(2, 132, 199, 0.1);
-  --accent-glow: rgba(2, 132, 199, 0.15);
+  --accent-primary: #04346c;      /* #04346c Accent */
+  --accent-hover: #02234b;
+  --accent-light: rgba(4, 52, 108, 0.12);
+  --accent-glow: rgba(4, 52, 108, 0.2);
 
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 15px rgba(2, 132, 199, 0.12);
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 15px rgba(4, 52, 108, 0.15);
 }
 
 :root {
