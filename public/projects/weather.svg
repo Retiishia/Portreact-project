@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <rect width="800" height="450" fill="#0369a1" rx="12"/>
+  <rect x="20" y="20" width="760" height="410" fill="#0c4a6e" rx="8" stroke="#0284c7" stroke-width="2"/>
+  <!-- Sun & Clouds -->
+  <circle cx="200" cy="160" r="60" fill="#fbbf24"/>
+  <path d="M 180 180 Q 200 130 260 140 Q 300 130 330 160 Q 360 180 340 210 Q 340 230 300 230 L 180 230 Z" fill="#e0f2fe" opacity="0.9"/>
+  <!-- Weather Specs -->
+  <text x="420" y="140" fill="#ffffff" font-family="sans-serif" font-size="64" font-weight="bold">28°C</text>
+  <text x="420" y="180" fill="#38bdf8" font-family="sans-serif" font-size="20" font-weight="600">Sunny &amp; Clear Sky</text>
+  <text x="420" y="210" fill="#93c5fd" font-family="sans-serif" font-size="14">Jakarta, Indonesia</text>
+  <!-- Weekly Cards -->
+  <g transform="translate(100, 260)">
+    <rect x="0" y="0" width="100" height="130" fill="#0284c7" rx="8"/>
+    <text x="35" y="30" fill="#ffffff" font-family="sans-serif" font-size="14">MON</text>
+    <circle cx="50" cy="65" r="16" fill="#fbbf24"/>
+    <text x="36" y="110" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">29°</text>
+  </g>
+  <g transform="translate(220, 260)">
+    <rect x="0" y="0" width="100" height="130" fill="#0284c7" rx="8"/>
+    <text x="36" y="30" fill="#ffffff" font-family="sans-serif" font-size="14">TUE</text>
+    <circle cx="50" cy="65" r="16" fill="#38bdf8"/>
+    <text x="36" y="110" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">27°</text>
+  </g>
+  <g transform="translate(340, 260)">
+    <rect x="0" y="0" width="100" height="130" fill="#0284c7" rx="8"/>
+    <text x="34" y="30" fill="#ffffff" font-family="sans-serif" font-size="14">WED</text>
+    <circle cx="50" cy="65" r="16" fill="#fbbf24"/>
+    <text x="36" y="110" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">30°</text>
+  </g>
+  <g transform="translate(460, 260)">
+    <rect x="0" y="0" width="100" height="130" fill="#0284c7" rx="8"/>
+    <text x="35" y="30" fill="#ffffff" font-family="sans-serif" font-size="14">THU</text>
+    <circle cx="50" cy="65" r="16" fill="#fbbf24"/>
+    <text x="36" y="110" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">28°</text>
+  </g>
+  <g transform="translate(580, 260)">
+    <rect x="0" y="0" width="100" height="130" fill="#0284c7" rx="8"/>
+    <text x="38" y="30" fill="#ffffff" font-family="sans-serif" font-size="14">FRI</text>
+    <circle cx="50" cy="65" r="16" fill="#38bdf8"/>
+    <text x="36" y="110" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">26°</text>
+  </g>
+</svg>
