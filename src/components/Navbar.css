@@ -16,37 +16,40 @@
   width: 100%;
 }
 
-.navbar__logo {
-  background: transparent;
-  font-size: 1.3rem;
-  font-weight: 800;
+.navbar__left {
   display: flex;
   align-items: center;
-  color: var(--text-primary);
-  letter-spacing: -0.5px;
+  gap: 32px;
 }
 
-.navbar__logo-bracket {
-  color: var(--accent-primary);
-  font-weight: 400;
+.navbar__logo {
+  background: transparent;
+  font-size: 1.35rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.5px;
+  padding: 0;
 }
 
 .navbar__logo-name {
-  color: var(--text-primary);
-  margin: 0 4px;
+  background: linear-gradient(135deg, #00d2ff 0%, #38bdf8 50%, #00a3c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .navbar__link {
   background: transparent;
   padding: 8px 14px;
   font-size: 0.88rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-secondary);
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
@@ -60,8 +63,15 @@
 
 .navbar__link--active {
   color: var(--accent-primary);
-  font-weight: 600;
+  font-weight: 700;
   background: var(--accent-light);
+}
+
+/* Right Section */
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Single-Word EN / ID Language Toggle Button */
@@ -78,7 +88,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 2px;
   transition: var(--transition-fast);
 }
 
@@ -99,7 +108,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 2px;
   transition: var(--transition-fast);
 }
 
@@ -110,7 +118,7 @@
 }
 
 .navbar__cta {
-  margin-left: 6px;
+  margin-left: 4px;
   padding: 8px 18px;
   font-size: 0.85rem;
 }
@@ -144,9 +152,13 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .navbar__hamburger {
     display: flex;
+  }
+
+  .navbar__left {
+    gap: 0;
   }
 
   .navbar__links {
@@ -175,15 +187,7 @@
     text-align: left;
   }
 
-  .navbar__lang-toggle,
-  .navbar__theme-toggle {
-    margin: 4px 0;
-    align-self: flex-start;
-  }
-
   .navbar__cta {
-    margin-left: 0;
-    margin-top: 8px;
-    justify-content: center;
+    display: none;
   }
 }

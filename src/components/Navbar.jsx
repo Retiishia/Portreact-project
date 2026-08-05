@@ -28,27 +28,30 @@ export default function Navbar({
   return (
     <nav className="navbar">
       <div className="navbar__container container">
-        <button
-          className="navbar__logo"
-          onClick={() => handleNavClick('hero')}
-        >
-          <span className="navbar__logo-bracket">&lt;</span>
-          <span className="navbar__logo-name">Farhan Aziz</span>
-          <span className="navbar__logo-bracket"> /&gt;</span>
-        </button>
+        {/* Left Section: Logo + Nav Links beside name */}
+        <div className="navbar__left">
+          <button
+            className="navbar__logo"
+            onClick={() => handleNavClick('hero')}
+          >
+            <span className="navbar__logo-name">Farhan Aziz</span>
+          </button>
 
-        <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
-          {navLinks.map((link) => (
-            <button
-              key={link.id}
-              className={`navbar__link ${activeSection === link.id ? 'navbar__link--active' : ''}`}
-              onClick={() => handleNavClick(link.id)}
-            >
-              {link.label}
-            </button>
-          ))}
+          <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                className={`navbar__link ${activeSection === link.id ? 'navbar__link--active' : ''}`}
+                onClick={() => handleNavClick(link.id)}
+              >
+                {link.label}
+              </button>
+            ))}
+          </div>
+        </div>
 
-          {/* Clean EN / ID Language Switcher */}
+        {/* Right Section: Language Toggle, Theme Toggle & CTA */}
+        <div className="navbar__right">
           <button
             className="navbar__lang-toggle"
             onClick={onToggleLang}
@@ -58,7 +61,6 @@ export default function Navbar({
             {lang === 'en' ? 'EN' : 'ID'}
           </button>
 
-          {/* Theme Switcher */}
           <button
             className="navbar__theme-toggle"
             onClick={onToggleTheme}
@@ -90,17 +92,17 @@ export default function Navbar({
           >
             {t.nav.hireMe}
           </button>
-        </div>
 
-        <button
-          className={`navbar__hamburger ${menuOpen ? 'navbar__hamburger--open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          <button
+            className={`navbar__hamburger ${menuOpen ? 'navbar__hamburger--open' : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </nav>
   );

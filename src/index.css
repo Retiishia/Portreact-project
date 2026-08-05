@@ -1,53 +1,57 @@
 /* ========================================
-   Design System — Black & Accent #04346c (Soft Gray Light Mode)
+   Design System — Dark Grey #363737 & Light Grey #d4d4d4
    ======================================== */
 
-/* Dark Mode (Default) — Pure Black & Accent #04346c */
+/* Dark Mode (Default) — Dark Grey #363737 */
 :root, [data-theme="dark"] {
-  --bg-primary: #050505;
-  --bg-secondary: #0d0d0d;
-  --bg-card: #121212;
-  --bg-card-hover: #1a1a1a;
-  --bg-navbar: rgba(5, 5, 5, 0.95);
+  --bg-primary: #363737;
+  --bg-secondary: #2b2c2c;
+  --bg-card: #2f3030;
+  --bg-card-hover: #3d3e3e;
+  --bg-navbar: rgba(54, 55, 55, 0.95);
 
-  --border-color: #222222;
-  --border-hover: #04346c;
+  --border-color: #4a4b4b;
+  --border-hover: #00d2ff;
 
   --text-primary: #f8fafc;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
 
-  --accent-primary: #04346c;      /* #04346c Accent */
-  --accent-hover: #02234b;
-  --accent-light: rgba(4, 52, 108, 0.2);
-  --accent-glow: rgba(4, 52, 108, 0.35);
+  --accent-primary: #00d2ff;      /* Cyan */
+  --accent-hover: #00b4db;
+  --accent-light: rgba(0, 210, 255, 0.15);
+  --accent-glow: rgba(0, 210, 255, 0.25);
 
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 15px rgba(4, 52, 108, 0.25);
+  --gradient-cyan: linear-gradient(135deg, #00d2ff 0%, #38bdf8 50%, #0284c7 100%);
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 15px rgba(0, 210, 255, 0.25);
 }
 
-/* Light Mode — Soft Gray Background & Accent #04346c */
+/* Light Mode — Light Grey #d4d4d4 */
 [data-theme="light"] {
-  --bg-primary: #f1f5f9;          /* Soft Gray background (Not White) */
-  --bg-secondary: #e2e8f0;        /* Soft Gray secondary */
-  --bg-card: #ffffff;             /* Card background */
-  --bg-card-hover: #f8fafc;
-  --bg-navbar: rgba(241, 245, 249, 0.95);
+  --bg-primary: #d4d4d4;          /* Light Grey #d4d4d4 */
+  --bg-secondary: #c4c4c4;        /* Slightly deeper grey */
+  --bg-card: #e5e5e5;             /* Card grey */
+  --bg-card-hover: #eeeeee;
+  --bg-navbar: rgba(212, 212, 212, 0.95);
 
-  --border-color: #cbd5e1;        /* Soft Gray border */
-  --border-hover: #04346c;
+  --border-color: #b5b5b5;        /* Border grey */
+  --border-hover: #008ca8;
 
-  --text-primary: #0f172a;        /* Dark slate text */
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #111827;        /* Crisp dark text */
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
 
-  --accent-primary: #04346c;      /* #04346c Accent */
-  --accent-hover: #02234b;
-  --accent-light: rgba(4, 52, 108, 0.12);
-  --accent-glow: rgba(4, 52, 108, 0.2);
+  --accent-primary: #008ca8;      /* Deep Cyan for Light Mode */
+  --accent-hover: #006b80;
+  --accent-light: rgba(0, 140, 168, 0.15);
+  --accent-glow: rgba(0, 140, 168, 0.2);
 
-  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06);
-  --shadow-glow: 0 0 15px rgba(4, 52, 108, 0.15);
+  --gradient-cyan: linear-gradient(135deg, #007791 0%, #008ca8 50%, #00a3c4 100%);
+
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 15px rgba(0, 140, 168, 0.2);
 }
 
 :root {
