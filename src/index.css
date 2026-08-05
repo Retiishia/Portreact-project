@@ -26,6 +26,11 @@
 
   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 15px rgba(0, 109, 115, 0.3);
+
+  --star-color: #ffffff;
+  --star-accent: #006d73;
+  --meteor-trail: rgba(0, 109, 115, 0.3);
+  --meteor-head: rgba(255, 255, 255, 0.8);
 }
 
 /* Light Mode — Light Grey #d4d4d4 & Accent #006d73 */
@@ -52,6 +57,11 @@
 
   --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
   --shadow-glow: 0 0 15px rgba(0, 109, 115, 0.2);
+
+  --star-color: #1a1a1a;
+  --star-accent: #333333;
+  --meteor-trail: rgba(30, 30, 30, 0.4);
+  --meteor-head: rgba(0, 0, 0, 0.7);
 }
 
 :root {
