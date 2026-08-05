@@ -64,18 +64,20 @@
   background: var(--accent-light);
 }
 
-/* Language Toggle Button */
+/* Single-Word EN / ID Language Toggle Button */
 .navbar__lang-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: var(--radius-full);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 2px;
   transition: var(--transition-fast);
 }
@@ -86,19 +88,10 @@
   color: var(--accent-primary);
 }
 
-.navbar__lang-flag {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-.navbar__lang-text {
-  letter-spacing: 0.5px;
-}
-
 /* Theme Toggle Button */
 .navbar__theme-toggle {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--bg-card);
   border: 1px solid var(--border-color);

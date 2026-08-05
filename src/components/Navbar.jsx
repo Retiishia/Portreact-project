@@ -48,15 +48,14 @@ export default function Navbar({
             </button>
           ))}
 
-          {/* Language Switcher */}
+          {/* Clean EN / ID Language Switcher */}
           <button
             className="navbar__lang-toggle"
             onClick={onToggleLang}
             aria-label="Toggle Language"
-            title={`Switch to ${lang === 'en' ? 'Indonesian' : 'English'}`}
+            title={`Switch to ${lang === 'en' ? 'Bahasa Indonesia' : 'English'}`}
           >
-            <span className="navbar__lang-flag">{lang === 'en' ? '🇬🇧' : '🇮🇩'}</span>
-            <span className="navbar__lang-text">{lang.toUpperCase()}</span>
+            {lang === 'en' ? 'EN' : 'ID'}
           </button>
 
           {/* Theme Switcher */}
