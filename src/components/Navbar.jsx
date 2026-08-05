@@ -1,16 +1,24 @@
 import { useState } from 'react';
 import './Navbar.css';
 
-const navLinks = [
-  { id: 'hero', label: 'Home' },
-  { id: 'about', label: 'About' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'contact', label: 'Contact' },
-];
-
-export default function Navbar({ activeSection, onSelectSection, theme, onToggleTheme }) {
+export default function Navbar({
+  activeSection,
+  onSelectSection,
+  theme,
+  onToggleTheme,
+  lang,
+  onToggleLang,
+  t,
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { id: 'hero', label: t.nav.home },
+    { id: 'about', label: t.nav.about },
+    { id: 'projects', label: t.nav.projects },
+    { id: 'experience', label: t.nav.experience },
+    { id: 'contact', label: t.nav.contact },
+  ];
 
   const handleNavClick = (id) => {
     onSelectSection(id);
@@ -40,6 +48,18 @@ export default function Navbar({ activeSection, onSelectSection, theme, onToggle
             </button>
           ))}
 
+          {/* Language Switcher */}
+          <button
+            className="navbar__lang-toggle"
+            onClick={onToggleLang}
+            aria-label="Toggle Language"
+            title={`Switch to ${lang === 'en' ? 'Indonesian' : 'English'}`}
+          >
+            <span className="navbar__lang-flag">{lang === 'en' ? '🇬🇧' : '🇮🇩'}</span>
+            <span className="navbar__lang-text">{lang.toUpperCase()}</span>
+          </button>
+
+          {/* Theme Switcher */}
           <button
             className="navbar__theme-toggle"
             onClick={onToggleTheme}
@@ -47,7 +67,7 @@ export default function Navbar({ activeSection, onSelectSection, theme, onToggle
             title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
           >
             {theme === 'dark' ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="5" />
                 <line x1="12" y1="1" x2="12" y2="3" />
                 <line x1="12" y1="21" x2="12" y2="23" />
@@ -59,7 +79,7 @@ export default function Navbar({ activeSection, onSelectSection, theme, onToggle
                 <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
               </svg>
             ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
               </svg>
             )}
@@ -69,7 +89,7 @@ export default function Navbar({ activeSection, onSelectSection, theme, onToggle
             className="btn btn-primary navbar__cta"
             onClick={() => handleNavClick('contact')}
           >
-            Hire Me
+            {t.nav.hireMe}
           </button>
         </div>
 

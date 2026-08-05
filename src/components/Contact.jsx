@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/Contact.css';
+import './Contact.css';
 
 const socialLinks = [
   {
@@ -22,7 +22,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    url: 'mailto:azizfarhan72@gmail.com',
+    url: 'mailto:farhanaziz@email.com',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -32,7 +32,7 @@ const socialLinks = [
   },
 ];
 
-export default function Contact() {
+export default function Contact({ t }) {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
@@ -51,33 +51,29 @@ export default function Contact() {
     <div className="contact">
       <div className="container">
         <div className="section-header">
-          <span className="section-label">Contact</span>
-          <h2 className="section-title">Let's Work Together</h2>
-          <p className="section-subtitle">
-            Have a project in mind? Reach out and let's get in touch
-          </p>
+          <span className="section-label">{t.contact.label}</span>
+          <h2 className="section-title">{t.contact.title}</h2>
+          <p className="section-subtitle">{t.contact.subtitle}</p>
         </div>
 
         <div className="contact__grid">
           <div className="contact__info">
-            <h3 className="contact__info-title">Get in Touch</h3>
-            <p className="contact__info-text">
-              I'm always open to discussing new projects, ideas, or frontend development opportunities.
-            </p>
+            <h3 className="contact__info-title">{t.contact.getInTouch}</h3>
+            <p className="contact__info-text">{t.contact.infoText}</p>
 
             <div className="contact__details">
               <div className="contact__detail-item">
                 <div className="contact__detail-icon">📧</div>
                 <div>
-                  <span className="contact__detail-label">Email</span>
-                  <span className="contact__detail-value">azizfarhan72@gmail.com</span>
+                  <span className="contact__detail-label">{t.contact.email}</span>
+                  <span className="contact__detail-value">farhanaziz@email.com</span>
                 </div>
               </div>
               <div className="contact__detail-item">
                 <div className="contact__detail-icon">📍</div>
                 <div>
-                  <span className="contact__detail-label">Location</span>
-                  <span className="contact__detail-value">Indonesia</span>
+                  <span className="contact__detail-label">{t.contact.location}</span>
+                  <span className="contact__detail-value">{t.contact.locationVal}</span>
                 </div>
               </div>
             </div>
@@ -100,38 +96,44 @@ export default function Contact() {
 
           <form className="contact__form solid-card" onSubmit={handleSubmit}>
             <div className="contact__form-group">
-              <label htmlFor="contact-name" className="contact__form-label">Name</label>
+              <label htmlFor="contact-name" className="contact__form-label">
+                {t.contact.nameLabel}
+              </label>
               <input
                 type="text"
                 id="contact-name"
                 name="name"
                 className="contact__form-input"
-                placeholder="Your name"
+                placeholder={t.contact.namePlaceholder}
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="contact__form-group">
-              <label htmlFor="contact-email" className="contact__form-label">Email</label>
+              <label htmlFor="contact-email" className="contact__form-label">
+                {t.contact.emailLabel}
+              </label>
               <input
                 type="email"
                 id="contact-email"
                 name="email"
                 className="contact__form-input"
-                placeholder="your@email.com"
+                placeholder={t.contact.emailPlaceholder}
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="contact__form-group">
-              <label htmlFor="contact-message" className="contact__form-label">Message</label>
+              <label htmlFor="contact-message" className="contact__form-label">
+                {t.contact.messageLabel}
+              </label>
               <textarea
                 id="contact-message"
                 name="message"
                 className="contact__form-input contact__form-textarea"
-                placeholder="Tell me about your project..."
+                placeholder={t.contact.messagePlaceholder}
                 rows="4"
                 value={formData.message}
                 onChange={handleChange}
@@ -139,7 +141,7 @@ export default function Contact() {
               ></textarea>
             </div>
             <button type="submit" className="btn btn-primary contact__form-btn">
-              {status === 'sent' ? '✓ Message Sent!' : 'Send Message'}
+              {status === 'sent' ? t.contact.sentBtn : t.contact.sendBtn}
             </button>
           </form>
         </div>

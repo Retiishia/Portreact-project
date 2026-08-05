@@ -1,50 +1,15 @@
-import '../css/Experience.css';
+import './Experience.css';
 
-const experiences = [
-  {
-    role: 'Frontend Developer',
-    company: 'Tech Company',
-    period: '2024 — Present',
-    description:
-      'Building modern web applications with React. Collaborating with design and backend teams to deliver clean user experiences.',
-    type: 'work',
-  },
-  {
-    role: 'Junior Web Developer',
-    company: 'Digital Agency',
-    period: '2023 — 2024',
-    description:
-      'Developed responsive websites for clients. Implemented clean code and optimized web performance.',
-    type: 'work',
-  },
-  {
-    role: 'Freelance Developer',
-    company: 'Self-Employed',
-    period: '2022 — 2023',
-    description:
-      'Created custom websites and web tools for small businesses and independent clients.',
-    type: 'freelance',
-  },
-  {
-    role: 'Computer Science Student',
-    company: 'University',
-    period: '2020 — 2024',
-    description:
-      'Studied software engineering principles, algorithms, and frontend development methodologies.',
-    type: 'education',
-  },
-];
+export default function Experience({ t }) {
+  const experiences = t.experience.items;
 
-export default function Experience() {
   return (
     <div className="experience">
       <div className="container">
         <div className="section-header">
-          <span className="section-label">My Journey</span>
-          <h2 className="section-title">Experience &amp; Education</h2>
-          <p className="section-subtitle">
-            A breakdown of my professional journey and educational background
-          </p>
+          <span className="section-label">{t.experience.label}</span>
+          <h2 className="section-title">{t.experience.title}</h2>
+          <p className="section-subtitle">{t.experience.subtitle}</p>
         </div>
 
         <div className="experience__timeline">

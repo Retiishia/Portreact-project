@@ -2,15 +2,18 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import { translations } from './translations';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'dark';
+  });
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem('lang') || 'en';
   });
 
   useEffect(() => {
@@ -18,25 +21,33 @@ function App() {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
+  useEffect(() => {
+    localStorage.setItem('lang', lang);
+  }, [lang]);
+
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
 
+  const toggleLang = () => {
+    setLang((prevLang) => (prevLang === 'en' ? 'id' : 'en'));
+  };
+
+  const t = translations[lang] || translations.en;
+
   const renderSection = () => {
     switch (activeSection) {
       case 'about':
-        return <About />;
-      case 'skills':
-        return <Skills />;
+        return <About t={t} />;
       case 'projects':
-        return <Projects />;
+        return <Projects t={t} />;
       case 'experience':
-        return <Experience />;
+        return <Experience t={t} />;
       case 'contact':
-        return <Contact />;
+        return <Contact t={t} />;
       case 'hero':
       default:
-        return <Hero onSelectSection={setActiveSection} />;
+        return <Hero onSelectSection={setActiveSection} t={t} />;
     }
   };
 
@@ -47,9 +58,12 @@ function App() {
         onSelectSection={setActiveSection}
         theme={theme}
         onToggleTheme={toggleTheme}
+        lang={lang}
+        onToggleLang={toggleLang}
+        t={t}
       />
       <main className="main-viewport">
-        <div key={activeSection} className="view-section">
+        <div key={`${activeSection}-${lang}`} className="view-section">
           {renderSection()}
         </div>
       </main>
