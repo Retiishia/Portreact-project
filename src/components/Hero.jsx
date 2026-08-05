@@ -3,6 +3,22 @@ import './Hero.css';
 export default function Hero({ onSelectSection, t }) {
   return (
     <div className="hero">
+      {/* Twinkling Stars */}
+      <div className="hero__stars">
+        <div className="hero__star-layer hero__star-layer--1"></div>
+        <div className="hero__star-layer hero__star-layer--2"></div>
+        <div className="hero__star-layer hero__star-layer--3"></div>
+      </div>
+
+      {/* Shooting Meteors */}
+      <div className="hero__meteors">
+        <div className="hero__meteor hero__meteor--1"></div>
+        <div className="hero__meteor hero__meteor--2"></div>
+        <div className="hero__meteor hero__meteor--3"></div>
+        <div className="hero__meteor hero__meteor--4"></div>
+        <div className="hero__meteor hero__meteor--5"></div>
+      </div>
+
       <div className="hero__content container">
         <div className="hero__badge">
           <span className="hero__badge-dot"></span>
