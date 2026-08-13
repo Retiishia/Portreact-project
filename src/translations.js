@@ -24,13 +24,11 @@ export const translations = {
       title: 'Passionate About Creating',
       subtitle: 'A little background about who I am and what drives me to build clean web applications',
       bio1:
-        'Hello! I am Farhan Aziz (Friz), a Web Developer and IT Support Specialist based in Bandung, Indonesia. I create websites that are not only functional but also visually appealing.',
+        'Hello! I am Farhan Aziz (Friz / Retiishia), a Web Developer and IT Support Specialist based in Bandung, Indonesia. I create websites that are not only functional but also visually appealing.',
       bio2:
         'My passion for coding and design drives me to constantly learn and improve my skills, delivering creative and efficient solutions for every project I undertake.',
       location: 'Location',
       locationVal: 'Bandung, Indonesia',
-      education: 'Education',
-      educationVal: 'Informatics Engineering',
       experience: 'Experience',
       experienceVal: '2+ Years',
       languages: 'Languages',
@@ -39,10 +37,9 @@ export const translations = {
     },
     experience: {
       label: 'My Journey',
-      title: 'Experience & Education',
-      subtitle: 'A breakdown of my professional work experience and educational background',
+      title: 'Work Experience',
+      subtitle: 'A breakdown of my professional work experience and career background',
       workTitle: 'Work Experience',
-      eduTitle: 'Education',
       items: [
         {
           company: 'PT. ISIGAME Store',
@@ -71,20 +68,6 @@ export const translations = {
           period: 'Oct 2018 — Dec 2018',
           role: 'Layouting & Pre-Press Division',
           description: 'Handled print newspaper layout design, digital asset formatting, and pre-press prep.',
-        },
-      ],
-      educationItems: [
-        {
-          name: 'Universitas Sangga Buana YPKP Bandung',
-          degree: 'Bachelor of Computer Science',
-          major: 'Informatics Engineering',
-          period: '2019 — 2023',
-        },
-        {
-          name: 'SMK UT PGII Bandung',
-          degree: 'Vocational High School',
-          major: 'Computer and Network Engineering',
-          period: '2016 — 2019',
         },
       ],
     },
@@ -146,7 +129,7 @@ export const translations = {
           title: 'SPK Rekomendasi Cempor',
           desc: 'A decision support system application providing intelligent recommendations for cempors based on user-defined preferences.',
           image: '/projects/cempor-site.webp',
-          type: 'web',
+          type: 'college',
           tags: ['Laravel', 'PHP', 'MySQL'],
           url: 'https://github.com/Retiishia/spk-rekomendasi-cempor',
         },
@@ -252,13 +235,11 @@ export const translations = {
       title: 'Passionate Dalam Berkarya',
       subtitle: 'Singkat cerita tentang siapa saya dan apa yang memotivasi saya membangun aplikasi web berkualitas',
       bio1:
-        'Halo! Saya Farhan Aziz (Friz), seorang Web Developer dan Spesialis IT Support dari Bandung, Indonesia. Saya membuat situs web yang tidak hanya fungsional tetapi juga menarik secara visual.',
+        'Halo! Saya Farhan Aziz (Friz / Retiishia), seorang Web Developer dan Spesialis IT Support dari Bandung, Indonesia. Saya membuat situs web yang tidak hanya fungsional tetapi juga menarik secara visual.',
       bio2:
         'Semangat saya dalam pemrograman dan desain mendorong saya untuk terus belajar dan meningkatkan keterampilan, memberikan solusi kreatif dan efisien untuk setiap proyek.',
       location: 'Lokasi',
       locationVal: 'Bandung, Indonesia',
-      education: 'Pendidikan',
-      educationVal: 'Teknik Informatika',
       experience: 'Pengalaman',
       experienceVal: '2+ Tahun',
       languages: 'Bahasa',
@@ -267,10 +248,9 @@ export const translations = {
     },
     experience: {
       label: 'Perjalanan Saya',
-      title: 'Pengalaman & Pendidikan',
-      subtitle: 'Rincian perjalanan pengalaman kerja profesional dan latar belakang pendidikan saya',
+      title: 'Pengalaman Kerja',
+      subtitle: 'Rincian perjalanan pengalaman kerja profesional dan latar belakang karir saya',
       workTitle: 'Pengalaman Kerja',
-      eduTitle: 'Pendidikan',
       items: [
         {
           company: 'PT. ISIGAME Store',
@@ -299,20 +279,6 @@ export const translations = {
           period: 'Okt 2018 — Des 2018',
           role: 'Divisi Layouting & Pre-Press',
           description: 'Menangani tata letak koran cetak, format aset digital, dan persiapan pra-cetak.',
-        },
-      ],
-      educationItems: [
-        {
-          name: 'Universitas Sangga Buana YPKP Bandung',
-          degree: 'Sarjana Komputer',
-          major: 'Teknik Informatika',
-          period: '2019 — 2023',
-        },
-        {
-          name: 'SMK UT PGII Bandung',
-          degree: 'Sekolah Menengah Kejuruan',
-          major: 'Teknik Komputer dan Jaringan',
-          period: '2016 — 2019',
         },
       ],
     },

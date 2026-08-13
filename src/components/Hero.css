@@ -73,9 +73,6 @@
   overflow: hidden;
 }
 
-/* Each meteor is a gradient streak, pre-rotated at ~35deg so it
-   points diagonally down-right. translateX in the rotated frame
-   moves it naturally along the diagonal. */
 .hero__meteor {
   position: absolute;
   height: 1.5px;
@@ -89,7 +86,6 @@
   );
 }
 
-/* Bright dot at the head */
 .hero__meteor::after {
   content: '';
   position: absolute;
@@ -159,25 +155,16 @@
   }
 }
 
-/* ===== Hero Content ===== */
+/* ===== Hero Content Centered ===== */
 .hero__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   position: relative;
   z-index: 1;
-}
-
-.hero__grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.hero__text-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
 }
 
 .hero__badge {
@@ -190,7 +177,7 @@
   border-radius: var(--radius-full);
   font-size: 0.85rem;
   color: var(--text-secondary);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   transition: background-color 0.4s ease, border-color 0.4s ease;
 }
 
@@ -202,7 +189,7 @@
 }
 
 .hero__title {
-  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
   font-weight: 900;
   line-height: 1.15;
   margin-bottom: 12px;
@@ -215,11 +202,12 @@
   font-family: 'Fira Code', monospace;
   font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   font-weight: 700;
-  color: #c678dd;
-  margin-bottom: 16px;
+  color: var(--accent-primary);
+  margin-bottom: 20px;
   min-height: 2.2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero__typewriter-cursor {
@@ -233,24 +221,20 @@
   50% { opacity: 0; }
 }
 
-/* Code Snippet Box */
-.hero__code-snippet {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.88rem;
-  line-height: 1.65;
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  padding: 14px 18px;
-  margin-bottom: 24px;
-  width: 100%;
-  max-width: 480px;
+.hero__description {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  transition: color 0.4s ease;
 }
 
 .hero__actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero__github-btn {
@@ -264,69 +248,4 @@
   color: var(--accent-primary);
   transform: translateY(-2px);
   box-shadow: 0 0 12px rgba(0, 109, 115, 0.2);
-}
-
-/* Profile Card Window */
-.hero__profile-col {
-  display: flex;
-  justify-content: center;
-}
-
-.hero__profile-card {
-  position: relative;
-  width: 100%;
-  max-width: 300px;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}
-
-.hero__profile-img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  display: block;
-}
-
-.hero__profile-badge {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  background: rgba(26, 26, 46, 0.85);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #ffffff;
-  white-space: nowrap;
-}
-
-.hero__profile-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #22c55e;
-}
-
-@media (max-width: 868px) {
-  .hero__grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .hero__text-col {
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero__actions {
-    justify-content: center;
-  }
 }
