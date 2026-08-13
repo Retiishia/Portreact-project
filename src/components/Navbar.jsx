@@ -13,10 +13,11 @@ export default function Navbar({
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { id: 'hero', label: 'retiishia.sln' },
-    { id: 'about', label: 'about.sln' },
-    { id: 'projects', label: 'projects.sln' },
-    { id: 'contact', label: 'contact.sln' },
+    { id: 'hero', label: t.nav.home },
+    { id: 'about', label: t.nav.about },
+    { id: 'experience', label: t.nav.experience },
+    { id: 'projects', label: t.nav.projects },
+    { id: 'contact', label: t.nav.contact },
   ];
 
   const handleNavClick = (id) => {

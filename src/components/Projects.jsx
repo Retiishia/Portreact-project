@@ -2,17 +2,18 @@ import { useState } from 'react';
 import './Projects.css';
 
 export default function Projects({ t }) {
-  const [filter, setFilter] = useState('all'); // 'all' | 'web' | 'jsvanilla' | 'college'
+  const [filter, setFilter] = useState('all');
 
   const filterTabs = [
-    { id: 'all', label: t.projects.filterTabs.all },
-    { id: 'web', label: t.projects.filterTabs.web },
-    { id: 'jsvanilla', label: t.projects.filterTabs.jsvanilla },
-    { id: 'college', label: t.projects.filterTabs.college },
+    { id: 'all', label: 'All Projects' },
+    { id: 'web', label: 'Web Apps' },
+    { id: 'jsvanilla', label: 'Vanilla JS' },
+    { id: 'mobile', label: 'Mobile & College' },
   ];
 
   const filteredProjects = t.projects.items.filter((item) => {
     if (filter === 'all') return true;
+    if (filter === 'mobile') return item.type === 'college' || item.type === 'mobile';
     return item.type === filter;
   });
 
@@ -25,7 +26,7 @@ export default function Projects({ t }) {
           <p className="section-subtitle">{t.projects.subtitle}</p>
         </div>
 
-        {/* Filter Sub-Tabs */}
+        {/* Filter Bar */}
         <div className="projects__filter-bar">
           {filterTabs.map((tab) => (
             <button
@@ -43,16 +44,6 @@ export default function Projects({ t }) {
         <div className="projects__grid">
           {filteredProjects.map((project) => (
             <div className="projects__card solid-card" key={project.id || project.title}>
-              {/* Project Window Header */}
-              <div className="projects__card-window-bar">
-                <div className="projects__card-dots">
-                  <span className="projects__card-dot projects__card-dot--red"></span>
-                  <span className="projects__card-dot projects__card-dot--yellow"></span>
-                  <span className="projects__card-dot projects__card-dot--green"></span>
-                </div>
-                <span className="projects__card-filename">{project.filename}</span>
-              </div>
-
               {/* Image Preview Container */}
               <div className="projects__card-preview">
                 <a
@@ -60,7 +51,7 @@ export default function Projects({ t }) {
                   target="_blank"
                   rel="noreferrer"
                   className="projects__card-img-link"
-                  title={`${t.projects.viewGithub}`}
+                  title={t.projects.viewGithub}
                 >
                   <img
                     src={project.image}
@@ -84,7 +75,7 @@ export default function Projects({ t }) {
 
                 {/* Tech Stack Badges */}
                 <div className="projects__card-tags">
-                  {project.stack.split(',').map((tech) => (
+                  {project.tags.map((tech) => (
                     <span className="projects__card-tag" key={tech}>
                       {tech}
                     </span>

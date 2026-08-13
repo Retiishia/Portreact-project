@@ -67,18 +67,7 @@ export default function Hero({ onSelectSection, t }) {
               <span className="hero__typewriter-cursor">|</span>
             </div>
 
-            {/* Code Snippet Box */}
-            <div className="hero__code-snippet">
-              <span className="code-gray">{t.hero.comment1}</span>
-              <br />
-              <span className="code-gray">{t.hero.comment2}</span>
-              <br />
-              <span className="code-pink">public string</span> <span className="code-blue">GetAlias</span><span className="code-default">() {'{'}</span>
-              <br />
-              <span className="code-purple">&nbsp;&nbsp;&nbsp;&nbsp;return </span><span className="code-green">"Friz"</span><span className="code-gray">;</span>
-              <br />
-              <span className="code-default">{'}'}</span>
-            </div>
+            <p className="hero__description">{t.hero.description}</p>
 
             <div className="hero__actions">
               <button onClick={() => onSelectSection('contact')} className="btn btn-primary">
@@ -102,17 +91,13 @@ export default function Hero({ onSelectSection, t }) {
             </div>
           </div>
 
-          {/* Right Profile Card Window */}
+          {/* Right Profile Column */}
           <div className="hero__profile-col">
             <div className="hero__profile-card solid-card">
-              <div className="hero__profile-window-bar">
-                <span className="hero__profile-dot hero__profile-dot--red"></span>
-                <span className="hero__profile-dot hero__profile-dot--yellow"></span>
-                <span className="hero__profile-dot hero__profile-dot--green"></span>
-                <span className="hero__profile-filename">profile.webp</span>
-              </div>
-              <div className="hero__profile-img-box">
-                <img src="/fubuki.webp" alt="Retiishia Profile" className="hero__profile-img" />
+              <img src="/fubuki.webp" alt="Retiishia Profile" className="hero__profile-img" />
+              <div className="hero__profile-badge">
+                <span className="hero__profile-dot"></span>
+                Farhan Aziz (@Retiishia)
               </div>
             </div>
           </div>
