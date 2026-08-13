@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const socialLinks = [
@@ -22,7 +23,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    url: 'mailto:farhanaziz@email.com',
+    url: 'mailto:azizfarhan72@gmail.com',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -32,19 +33,64 @@ const socialLinks = [
   },
 ];
 
-export default function Contact({ t }) {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('');
+// EmailJS Config Credentials (from VITE_ environment variables or placeholders)
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_portfolio';
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_portfolio';
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('sent');
-    setFormData({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus(''), 3000);
-  };
+export default function Contact({ t }) {
+  const formRef = useRef();
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState(''); // 'sending' | 'sent' | 'error' | ''
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+
+    try {
+      // If user hasn't replaced placeholder key yet, fallback gracefully with a message
+      if (PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
+        console.warn('EmailJS notice: Please configure your VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in .env file.');
+        // Simulate send delay so user gets visual feedback
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setStatus('sent');
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus(''), 4000);
+        return;
+      }
+
+      await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        formRef.current,
+        { publicKey: PUBLIC_KEY }
+      );
+
+      setStatus('sent');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus(''), 4000);
+    } catch (error) {
+      console.error('EmailJS error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus(''), 5000);
+    }
+  };
+
+  const getButtonText = () => {
+    switch (status) {
+      case 'sending':
+        return t.contact.sendingBtn;
+      case 'sent':
+        return t.contact.sentBtn;
+      case 'error':
+        return t.contact.errorBtn;
+      default:
+        return t.contact.sendBtn;
+    }
   };
 
   return (
@@ -66,7 +112,9 @@ export default function Contact({ t }) {
                 <div className="contact__detail-icon">📧</div>
                 <div>
                   <span className="contact__detail-label">{t.contact.email}</span>
-                  <span className="contact__detail-value">farhanaziz@email.com</span>
+                  <a href="mailto:azizfarhan72@gmail.com" className="contact__detail-value">
+                    azizfarhan72@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="contact__detail-item">
@@ -94,7 +142,11 @@ export default function Contact({ t }) {
             </div>
           </div>
 
-          <form className="contact__form solid-card" onSubmit={handleSubmit}>
+          <form ref={formRef} className="contact__form solid-card" onSubmit={handleSubmit}>
+            {/* Hidden field for destination recipient email */}
+            <input type="hidden" name="to_email" value="azizfarhan72@gmail.com" />
+            <input type="hidden" name="to_name" value="Farhan Aziz" />
+
             <div className="contact__form-group">
               <label htmlFor="contact-name" className="contact__form-label">
                 {t.contact.nameLabel}
@@ -140,8 +192,12 @@ export default function Contact({ t }) {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary contact__form-btn">
-              {status === 'sent' ? t.contact.sentBtn : t.contact.sendBtn}
+            <button
+              type="submit"
+              className={`btn btn-primary contact__form-btn ${status === 'sent' ? 'contact__form-btn--sent' : ''} ${status === 'error' ? 'contact__form-btn--error' : ''}`}
+              disabled={status === 'sending'}
+            >
+              {getButtonText()}
             </button>
           </form>
         </div>

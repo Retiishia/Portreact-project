@@ -127,11 +127,30 @@
   min-height: 100px;
 }
 
+a.contact__detail-value {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.contact__detail-value:hover {
+  color: var(--accent-primary);
+}
+
 .contact__form-btn {
   width: 100%;
   justify-content: center;
   padding: 14px;
   margin-top: 4px;
+}
+
+.contact__form-btn--sent {
+  background: #16a34a !important;
+  border-color: #16a34a !important;
+}
+
+.contact__form-btn--error {
+  background: #dc2626 !important;
+  border-color: #dc2626 !important;
 }
 
 @media (max-width: 768px) {

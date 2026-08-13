@@ -122,7 +122,9 @@ export const translations = {
       messageLabel: 'Message',
       messagePlaceholder: 'Tell me about your project...',
       sendBtn: 'Send Message',
+      sendingBtn: 'Sending Message...',
       sentBtn: '✓ Message Sent!',
+      errorBtn: '✕ Failed to Send. Try Again',
     },
   },
   id: {
@@ -248,7 +250,9 @@ export const translations = {
       messageLabel: 'Pesan',
       messagePlaceholder: 'Ceritakan tentang proyek Anda...',
       sendBtn: 'Kirim Pesan',
+      sendingBtn: 'Mengirim Pesan...',
       sentBtn: '✓ Pesan Terkirim!',
+      errorBtn: '✕ Gagal Mengirim. Coba Lagi',
     },
   },
 };
