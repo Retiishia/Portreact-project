@@ -1,4 +1,4 @@
-import './About.css';
+import '../css/About.css';
 
 export default function About({ t }) {
   return (
@@ -13,7 +13,7 @@ export default function About({ t }) {
         <div className="about__grid">
           <div className="about__image-wrapper">
             <div className="about__profile-card solid-card">
-              <img src="/fubuki.webp" alt="Farhan Aziz Profile" className="about__profile-img" />
+              <img src="../fubuki.webp" alt="Farhan Aziz Profile" className="about__profile-img" />
               <div className="about__profile-badge">
                 <span className="about__profile-dot"></span>
                 Farhan Aziz (Friz)

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Projects.css';
+import '../css/Projects.css';
 
 export default function Projects({ t }) {
   const [filter, setFilter] = useState('all');

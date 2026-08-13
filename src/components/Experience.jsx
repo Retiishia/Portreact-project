@@ -1,4 +1,4 @@
-import './Experience.css';
+import '../css/Experience.css';
 
 export default function Experience({ t }) {
   const experiences = t.experience.items;

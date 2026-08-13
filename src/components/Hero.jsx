@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './Hero.css';
+import '../css/Hero.css';
 
 export default function Hero({ onSelectSection, t }) {
   const [roleIndex, setRoleIndex] = useState(0);

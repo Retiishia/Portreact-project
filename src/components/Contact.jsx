@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import './Contact.css';
+import '../css/Contact.css';
 
 const socialLinks = [
   {

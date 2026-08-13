@@ -213,9 +213,9 @@ export const translations = {
   id: {
     nav: {
       home: 'Beranda',
-      about: 'Tentang',
+      about: 'Tentang Saya',
       experience: 'Pengalaman',
-      projects: 'Proyek',
+      projects: 'Projek',
       contact: 'Kontak',
       hireMe: 'Rekrut Saya',
     },
@@ -226,7 +226,7 @@ export const translations = {
       role: 'Frontend Developer & IT Support',
       roles: ['> Web Developer', '> IT Support', '> Video Editor', '> Coffee Enthusiast'],
       description:
-        'Saya membangun aplikasi web yang bersih, cepat, dan berorientasi pada pengguna menggunakan teknologi modern. Kesederhanaan bertemu fungsionalitas, ditenagai kopi & kode.',
+        'Saya membangun aplikasi web yang bersih, cepat, dan berorientasi pada pengguna menggunakan teknologi modern. Kesederhanaan bertemu fungsionalitas.',
       getInTouch: 'Hubungi Saya',
       github: 'GitHub',
     },
@@ -235,9 +235,9 @@ export const translations = {
       title: 'Passionate Dalam Berkarya',
       subtitle: 'Singkat cerita tentang siapa saya dan apa yang memotivasi saya membangun aplikasi web berkualitas',
       bio1:
-        'Halo! Saya Farhan Aziz (Friz / Retiishia), seorang Web Developer dan Spesialis IT Support dari Bandung, Indonesia. Saya membuat situs web yang tidak hanya fungsional tetapi juga menarik secara visual.',
+        'Halo! Saya Farhan Aziz (Friz), seorang Web Developer dan Spesialis IT Support dari Bandung, Indonesia. Saya membuat situs web yang tidak hanya fungsional tetapi juga menarik secara visual.',
       bio2:
-        'Semangat saya dalam pemrograman dan desain mendorong saya untuk terus belajar dan meningkatkan keterampilan, memberikan solusi kreatif dan efisien untuk setiap proyek.',
+        'Semangat saya dalam pemrograman dan desain mendorong saya untuk terus belajar dan meningkatkan keterampilan, memberikan solusi kreatif dan efisien untuk setiap projek.',
       location: 'Lokasi',
       locationVal: 'Bandung, Indonesia',
       experience: 'Pengalaman',
