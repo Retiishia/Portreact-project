@@ -12,6 +12,7 @@
 
   --border-color: #2e2e50;
   --border-hover: #006d73;
+  --border-hover-bright: #009da4;
 
   --text-primary: #f8fafc;
   --text-secondary: #cbd5e1;
@@ -43,6 +44,7 @@
 
   --border-color: #b5b5b5;
   --border-hover: #006d73;
+  --border-hover-bright: #008f97;
 
   --text-primary: #111827;
   --text-secondary: #374151;
@@ -93,7 +95,7 @@ html, body {
   color: var(--text-primary);
   font-family: var(--font);
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease;
   -webkit-font-smoothing: antialiased;
 }
 

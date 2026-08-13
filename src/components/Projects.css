@@ -151,10 +151,10 @@
 }
 
 .projects__link-btn--github:hover {
-  background: var(--accent-light);
-  border-color: var(--accent-primary);
+  border-color: var(--border-hover-bright);
   color: var(--accent-primary);
   transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 109, 115, 0.15);
   cursor: pointer;
 }
 

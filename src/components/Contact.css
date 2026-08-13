@@ -81,12 +81,13 @@
   border-radius: var(--radius-sm);
   background: var(--bg-card);
   color: var(--text-secondary);
-  transition: var(--transition-fast);
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.4s ease;
 }
 
 .contact__social-link:hover {
   color: var(--accent-primary);
-  border-color: var(--accent-primary);
+  border-color: var(--border-hover-bright);
+  box-shadow: 0 0 10px rgba(0, 109, 115, 0.15);
 }
 
 .contact__form {
@@ -113,11 +114,12 @@
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-size: 0.9rem;
-  transition: var(--transition-fast);
+  transition: border-color 0.2s ease, background-color 0.4s ease, color 0.4s ease;
 }
 
 .contact__form-input:focus {
-  border-color: var(--accent-primary);
+  border-color: var(--border-hover-bright);
+  box-shadow: 0 0 8px rgba(0, 109, 115, 0.15);
 }
 
 .contact__form-textarea {

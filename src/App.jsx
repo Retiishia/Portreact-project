@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -9,6 +9,9 @@ import { translations } from './translations';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
+  const [displayedSection, setDisplayedSection] = useState('hero');
+  const [isHidden, setIsHidden] = useState(false);
+
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('theme') || 'dark';
   });
@@ -33,10 +36,26 @@ function App() {
     setLang((prevLang) => (prevLang === 'en' ? 'id' : 'en'));
   };
 
+  // Smooth fade-out → switch → fade-in
+  const handleSelectSection = useCallback((section) => {
+    if (section === activeSection) return;
+    setIsHidden(true); // fade out
+    setTimeout(() => {
+      setActiveSection(section);
+      setDisplayedSection(section);
+      // Let React paint the new component, then fade in
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setIsHidden(false);
+        });
+      });
+    }, 280); // match CSS fade-out duration
+  }, [activeSection]);
+
   const t = translations[lang] || translations.en;
 
   const renderSection = () => {
-    switch (activeSection) {
+    switch (displayedSection) {
       case 'about':
         return <About t={t} />;
       case 'projects':
@@ -47,7 +66,7 @@ function App() {
         return <Contact t={t} />;
       case 'hero':
       default:
-        return <Hero onSelectSection={setActiveSection} t={t} />;
+        return <Hero onSelectSection={handleSelectSection} t={t} />;
     }
   };
 
@@ -55,7 +74,7 @@ function App() {
     <div className="app">
       <Navbar
         activeSection={activeSection}
-        onSelectSection={setActiveSection}
+        onSelectSection={handleSelectSection}
         theme={theme}
         onToggleTheme={toggleTheme}
         lang={lang}
@@ -63,7 +82,7 @@ function App() {
         t={t}
       />
       <main className="main-viewport">
-        <div key={`${activeSection}-${lang}`} className="view-section">
+        <div className={`view-section ${isHidden ? 'view-section--hidden' : ''}`}>
           {renderSection()}
         </div>
       </main>
