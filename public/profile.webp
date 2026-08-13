@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="google-adsense-account" content="ca-pub-4499218414555492" />
+		<meta name="description" content="Portfolio Websites." />
+		<meta
+			name="author"
+			content="Farhan Aziz - Retiishia (https://retiishia.my.id)" />
+		<meta
+			name="keywords"
+			content="Retiishia, portfolio, web developer, it support, osu, osu mania, vsrg, rhythm game, projects, tools, programming, software" />
+		<meta name="language" content="English" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="distribution" content="global" />
+
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Farhan Aziz" />
+		<meta property="og:title" content="Portfolio - Farhan Aziz" />
+		<meta property="og:description" content="Portfolio Websites." />
+		<meta property="og:image" content="/og.png" />
+		<meta property="og:url" content="https://portfolio.retiishia.my.id" />
+		<meta property="og:type" content="website" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Portfolio - Farhan Aziz" />
+		<meta name="twitter:description" content="Portfolio Websites." />
+		<meta name="twitter:image" content="/og.png" />
+		<meta
+			name="google-site-verification"
+			content="eJaPf7ohpQmqgraBzlok9eJg7SV9TPzDdf9vcRG1dY4" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Quicksand:wght@300..700&display=swap"
+			rel="stylesheet" />
+		<title>Retiishia | Home</title>
+		<script type="module" crossorigin src="/assets/index-Cgbb03S-.js"></script>
+		<link rel="stylesheet" crossorigin href="/assets/index-BeEdLQDo.css">
+	</head>
+	<body
+		class="relative min-h-screen bg-[#f3f1e7] overflow-x-hidden select-none font-mono">
+		<div id="root"></div>
+	</body>
+</html>
