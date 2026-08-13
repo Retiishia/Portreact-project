@@ -120,13 +120,11 @@
   justify-content: center;
   padding: 40px 0;
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.28s ease, transform 0.28s ease;
+  transition: opacity 0.28s ease;
 }
 
 .view-section--hidden {
   opacity: 0;
-  transform: translateY(12px);
 }
 
 @media (max-width: 768px) {
