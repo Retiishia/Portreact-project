@@ -7,13 +7,12 @@ export default function About({ t }) {
         <div className="section-header">
           <span className="section-label">{t.about.label}</span>
           <h2 className="section-title">{t.about.title}</h2>
-          <p className="section-subtitle">{t.about.subtitle}</p>
         </div>
 
         <div className="about__grid">
           <div className="about__image-wrapper">
             <div className="about__profile-card solid-card">
-              <img src="../fubuki.webp" alt="Farhan Aziz Profile" className="about__profile-img" />
+              <img src="/fubuki.webp" alt="Farhan Aziz Profile" className="about__profile-img" />
               <div className="about__profile-badge">
                 <span className="about__profile-dot"></span>
                 Farhan Aziz (Friz)
@@ -34,20 +33,13 @@ export default function About({ t }) {
                 </div>
               </div>
               <div className="about__info-item solid-card">
-                <span className="about__info-icon">🎓</span>
-                <div>
-                  <span className="about__info-label">{t.about.education}</span>
-                  <span className="about__info-value">{t.about.educationVal}</span>
-                </div>
-              </div>
-              <div className="about__info-item solid-card">
                 <span className="about__info-icon">💼</span>
                 <div>
                   <span className="about__info-label">{t.about.experience}</span>
                   <span className="about__info-value">{t.about.experienceVal}</span>
                 </div>
               </div>
-              <div className="about__info-item solid-card">
+              <div className="about__info-item solid-card about__info-item--full">
                 <span className="about__info-icon">🌐</span>
                 <div>
                   <span className="about__info-label">{t.about.languages}</span>
@@ -56,7 +48,7 @@ export default function About({ t }) {
               </div>
             </div>
 
-            {/* Sleek Hover Button for Download CV */}
+            {/* Hover Button for CV aligned to right */}
             <div className="about__actions">
               <a
                 href="/cv.pdf"

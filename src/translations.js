@@ -33,7 +33,7 @@ export const translations = {
       experienceVal: '2+ Years',
       languages: 'Languages',
       languagesVal: 'Indonesian, English',
-      downloadCv: 'Download CV',
+      downloadCv: 'CV',
     },
     experience: {
       label: 'My Journey',
@@ -244,7 +244,7 @@ export const translations = {
       experienceVal: '2+ Tahun',
       languages: 'Bahasa',
       languagesVal: 'Bahasa Indonesia, Inggris',
-      downloadCv: 'Unduh CV',
+      downloadCv: 'CV',
     },
     experience: {
       label: 'Perjalanan Saya',

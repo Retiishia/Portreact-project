@@ -6,13 +6,13 @@
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 44px;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about__image-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .about__profile-card {
@@ -102,6 +102,10 @@
   padding: 14px;
 }
 
+.about__info-item--full {
+  grid-column: span 2;
+}
+
 .about__info-icon {
   font-size: 1.3rem;
 }
@@ -125,8 +129,9 @@
 }
 
 .about__actions {
-  margin-top: 12px;
+  margin-top: 16px;
   display: flex;
+  justify-content: flex-end;
 }
 
 .about__cv-btn {
@@ -149,6 +154,10 @@
 
   .about__info {
     grid-template-columns: 1fr;
+  }
+
+  .about__info-item--full {
+    grid-column: span 1;
   }
 
   .about__actions {
