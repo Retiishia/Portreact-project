@@ -33,10 +33,10 @@ const socialLinks = [
   },
 ];
 
-// EmailJS Config Credentials (from VITE_ environment variables or placeholders)
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_portfolio';
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_portfolio';
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+// EmailJS Config Credentials
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_yggn0vr';
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_xq3kv57';
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '52MPQAlD1FShsReAL';
 
 export default function Contact({ t }) {
   const formRef = useRef();
@@ -52,17 +52,6 @@ export default function Contact({ t }) {
     setStatus('sending');
 
     try {
-      // If user hasn't replaced placeholder key yet, fallback gracefully with a message
-      if (PUBLIC_KEY === 'YOUR_PUBLIC_KEY') {
-        console.warn('EmailJS notice: Please configure your VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in .env file.');
-        // Simulate send delay so user gets visual feedback
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setStatus('sent');
-        setFormData({ name: '', email: '', message: '' });
-        setTimeout(() => setStatus(''), 4000);
-        return;
-      }
-
       await emailjs.sendForm(
         SERVICE_ID,
         TEMPLATE_ID,
