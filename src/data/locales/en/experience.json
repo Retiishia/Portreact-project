@@ -1,0 +1,36 @@
+{
+  "label": "My Journey",
+  "title": "Work Experience",
+  "subtitle": "A breakdown of my professional work experience and career background",
+  "workTitle": "Work Experience",
+  "items": [
+    {
+      "company": "PT. ISIGAME Store",
+      "type": "Freelance",
+      "period": "Apr 2024 — Present",
+      "role": "Customer Service & Admin Support",
+      "description": "Provided customer support, administrative handling, and store operations assistance."
+    },
+    {
+      "company": "PT. Datenshi Games Indonesia",
+      "type": "Volunteer",
+      "period": "Apr 2024 — Present",
+      "role": "Front End Developer",
+      "description": "Developing user interface features and modern web components for gaming platform."
+    },
+    {
+      "company": "Universitas Sangga Buana YPKP",
+      "type": "Contract",
+      "period": "Oct 2023 — Mar 2024",
+      "role": "Laboratorium Computer Assistant",
+      "description": "Managed computer laboratory equipment, assisted students, and maintained network hardware."
+    },
+    {
+      "company": "PT. Global Media Visual (BandungEkspres)",
+      "type": "Internship",
+      "period": "Oct 2018 — Dec 2018",
+      "role": "Layouting & Pre-Press Division",
+      "description": "Handled print newspaper layout design, digital asset formatting, and pre-press prep."
+    }
+  ]
+}

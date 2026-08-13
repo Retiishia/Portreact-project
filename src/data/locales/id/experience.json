@@ -1,0 +1,36 @@
+{
+  "label": "Perjalanan Saya",
+  "title": "Pengalaman Kerja",
+  "subtitle": "Rincian perjalanan pengalaman kerja profesional dan latar belakang karir saya",
+  "workTitle": "Pengalaman Kerja",
+  "items": [
+    {
+      "company": "PT. ISIGAME Store",
+      "type": "Freelance",
+      "period": "Apr 2024 — Sekarang",
+      "role": "Customer Service & Admin Support",
+      "description": "Melayani dukungan pelanggan, administrasi toko, dan pengelolaan operasi harian."
+    },
+    {
+      "company": "PT. Datenshi Games Indonesia",
+      "type": "Sukarelawan",
+      "period": "Apr 2024 — Sekarang",
+      "role": "Front End Developer",
+      "description": "Mengembangkan antarmuka pengguna dan komponen web modern untuk platform gim."
+    },
+    {
+      "company": "Universitas Sangga Buana YPKP",
+      "type": "Kontrak",
+      "period": "Okt 2023 — Mar 2024",
+      "role": "Asisten Laboratorium Komputer",
+      "description": "Mengelola perangkat laboratorium komputer, membimbing mahasiswa, dan memelihara jaringan."
+    },
+    {
+      "company": "PT. Global Media Visual (BandungEkspres)",
+      "type": "Magang",
+      "period": "Okt 2018 — Des 2018",
+      "role": "Divisi Layouting & Pre-Press",
+      "description": "Menangani tata letak koran cetak, format aset digital, dan persiapan pra-cetak."
+    }
+  ]
+}

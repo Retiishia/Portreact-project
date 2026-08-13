@@ -1,0 +1,14 @@
+{
+  "label": "About Me",
+  "title": "Passionate About Creating",
+  "subtitle": "A little background about who I am and what drives me to build clean web applications",
+  "bio1": "Hello! I am Farhan Aziz (Friz / Retiishia), a Web Developer and IT Support Specialist based in Bandung, Indonesia. I create websites that are not only functional but also visually appealing.",
+  "bio2": "My passion for coding and design drives me to constantly learn and improve my skills, delivering creative and efficient solutions for every project I undertake.",
+  "location": "Location",
+  "locationVal": "Bandung, Indonesia",
+  "experience": "Experience",
+  "experienceVal": "2+ Years",
+  "languages": "Languages",
+  "languagesVal": "Indonesian, English",
+  "downloadCv": "CV"
+}

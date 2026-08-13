@@ -5,7 +5,20 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import { translations } from './translations';
+
+const localeFiles = import.meta.glob('./data/locales/*/*.json', { eager: true });
+
+const translations = Object.entries(localeFiles).reduce((acc, [filePath, moduleValue]) => {
+  const match = filePath.match(/^\.\/data\/locales\/([^/]+)\/([^/]+)\.json$/);
+
+  if (!match) return acc;
+
+  const [, lang, section] = match;
+  if (!acc[lang]) acc[lang] = {};
+  acc[lang][section] = moduleValue.default ?? moduleValue;
+
+  return acc;
+}, {});
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');

@@ -1,0 +1,118 @@
+{
+  "label": "My Work",
+  "title": "Featured Projects",
+  "subtitle": "A selection of web development projects I've built",
+  "viewGithub": "View GitHub Repository",
+  "githubBtn": "GitHub",
+  "demoBtn": "Live Demo",
+  "items": [
+    {
+      "id": "datenshi-site",
+      "title": "Datenshi Site",
+      "desc": "A website for Datenshi Games Indonesia, showcasing gaming projects, community links, and news with a modern user interface.",
+      "image": "/projects/datenshi-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://datenshi.retiishia.my.id/"
+    },
+    {
+      "id": "weatherapp-site",
+      "title": "Weather App Web Application",
+      "desc": "A weather web application built with React and Tailwind CSS providing weather updates, 7-day forecasts, and user location detection.",
+      "image": "/projects/weatherapp-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://weatherapp.retiishia.my.id/"
+    },
+    {
+      "id": "portfolio-site",
+      "title": "Portfolio Website",
+      "desc": "A single page portfolio site built with React and Tailwind CSS featuring modern design, smooth section switching, and responsive layout.",
+      "image": "/projects/portfolio-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://portfolio.retiishia.my.id/"
+    },
+    {
+      "id": "old-portfolio-site",
+      "title": "Portfolio Website (Next.js)",
+      "desc": "An earlier version portfolio site built with Next.js to showcase projects, skills, and professional achievements.",
+      "image": "/projects/oldportfolio-site.webp",
+      "type": "web",
+      "tags": ["Next.js", "React", "Tailwind"],
+      "url": "https://github.com/Retiishia/Portfolio-NextJS.git"
+    },
+    {
+      "id": "catapp-mobile",
+      "title": "CatApp Mobile Application",
+      "desc": "A mobile application that helps users discover and filter cat breeds based on custom criteria with detailed breed characteristics.",
+      "image": "/projects/catapp-mobile.webp",
+      "type": "mobile",
+      "tags": ["Kotlin", "Gradle", "Bootstrap"],
+      "url": "https://github.com/Retiishia/CatApp-Kotlin"
+    },
+    {
+      "id": "cempor-site",
+      "title": "SPK Rekomendasi Cempor",
+      "desc": "A decision support system application providing intelligent recommendations for cempors based on user-defined preferences.",
+      "image": "/projects/cempor-site.webp",
+      "type": "college",
+      "tags": ["Laravel", "PHP", "MySQL"],
+      "url": "https://github.com/Retiishia/spk-rekomendasi-cempor"
+    },
+    {
+      "id": "todo-list-site",
+      "title": "TODO List Web Application",
+      "desc": "A productive TODO list application featuring a clean, intuitive interface for managing tasks, priorities, and productivity.",
+      "image": "/projects/todolist.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/todo-list-webapp"
+    },
+    {
+      "id": "calculator-site",
+      "title": "Calculator Web Application",
+      "desc": "A fully-functional calculator web application supporting basic arithmetic operations, built with vanilla JavaScript.",
+      "image": "/projects/calculator-site.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/CalculatorJS"
+    },
+    {
+      "id": "weatherapp-js",
+      "title": "Weather App JavaScript",
+      "desc": "A weather web application built with vanilla JavaScript providing real-time weather updates and location-based forecasts.",
+      "image": "/projects/weatherapp-js.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/BasicWeatherJS"
+    },
+    {
+      "id": "quiz-site",
+      "title": "Quiz Web Application",
+      "desc": "An interactive quiz web application featuring multiple-choice questions, score tracking, and a user-friendly interface.",
+      "image": "/projects/quizapp-js.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/QuizAppJS"
+    },
+    {
+      "id": "expense-tracker-site",
+      "title": "Expense Tracker Web App",
+      "desc": "A simple expense tracking application that helps users manage and monitor spending with expense categorization.",
+      "image": "/projects/expense-tracker-webapp.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/ExpenseTrackerJS"
+    },
+    {
+      "id": "movie-search-site",
+      "title": "Movies Search WebApp",
+      "desc": "A movie search application that allows users to discover and explore movies with detailed info and ratings.",
+      "image": "/projects/movie-search-webapp.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/MovieSearch-JS"
+    }
+  ]
+}

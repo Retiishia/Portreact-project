@@ -1,0 +1,20 @@
+{
+  "label": "Contact",
+  "title": "Let's Work Together",
+  "subtitle": "Have a project in mind? Reach out and let's get in touch",
+  "getInTouch": "Get in Touch",
+  "infoText": "I'm open to discussing new projects, frontend development opportunities, or IT support inquiries.",
+  "email": "Email",
+  "location": "Location",
+  "locationVal": "Bandung, Indonesia",
+  "nameLabel": "Name",
+  "namePlaceholder": "Your name",
+  "emailLabel": "Email",
+  "emailPlaceholder": "you@example.com",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Tell me about your project...",
+  "sendBtn": "Send Message",
+  "sendingBtn": "Sending Message...",
+  "sentBtn": "✓ Message Sent!",
+  "errorBtn": "✕ Failed to Send. Try Again"
+}

@@ -1,0 +1,10 @@
+{
+  "badge": "Siap Bekerja",
+  "titlePrefix": "Halo, Saya ",
+  "name": "Farhan Aziz",
+  "role": "Frontend Developer & IT Support",
+  "roles": ["> Web Developer", "> IT Support", "> Video Editor", "> Coffee Enthusiast"],
+  "description": "Saya membangun aplikasi web yang bersih, cepat, dan berorientasi pada pengguna menggunakan teknologi modern. Kesederhanaan bertemu fungsionalitas.",
+  "getInTouch": "Hubungi Saya",
+  "github": "GitHub"
+}

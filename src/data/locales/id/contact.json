@@ -1,0 +1,20 @@
+{
+  "label": "Kontak",
+  "title": "Mari Kita Bekerja Sama",
+  "subtitle": "Ada proyek yang ingin dibahas? Hubungi saya dan mari terhubung",
+  "getInTouch": "Hubungi Saya",
+  "infoText": "Saya terbuka untuk membahas proyek baru, peluang pengembangan frontend, atau pertanyaan seputar IT support.",
+  "email": "Email",
+  "location": "Lokasi",
+  "locationVal": "Bandung, Indonesia",
+  "nameLabel": "Nama",
+  "namePlaceholder": "Nama Anda",
+  "emailLabel": "Email",
+  "emailPlaceholder": "anda@example.com",
+  "messageLabel": "Pesan",
+  "messagePlaceholder": "Ceritakan tentang proyek Anda...",
+  "sendBtn": "Kirim Pesan",
+  "sendingBtn": "Mengirim Pesan...",
+  "sentBtn": "✓ Pesan Terkirim!",
+  "errorBtn": "✕ Gagal Mengirim. Coba Lagi"
+}

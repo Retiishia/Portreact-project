@@ -1,0 +1,118 @@
+{
+  "label": "Karya Saya",
+  "title": "Proyek Unggulan",
+  "subtitle": "Kumpulan proyek pengembangan web yang telah saya bangun",
+  "viewGithub": "Lihat Repositori GitHub",
+  "githubBtn": "GitHub",
+  "demoBtn": "Demo Langsung",
+  "items": [
+    {
+      "id": "datenshi-site",
+      "title": "Datenshi Site",
+      "desc": "Website untuk Datenshi Games Indonesia yang menampilkan proyek game, tautan komunitas, dan berita dengan antarmuka modern.",
+      "image": "/projects/datenshi-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://datenshi.retiishia.my.id/"
+    },
+    {
+      "id": "weatherapp-site",
+      "title": "Aplikasi Cuaca Web",
+      "desc": "Aplikasi cuaca berbasis React & Tailwind CSS dengan fitur prakiraan 7 hari dan deteksi lokasi otomatis.",
+      "image": "/projects/weatherapp-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://weatherapp.retiishia.my.id/"
+    },
+    {
+      "id": "portfolio-site",
+      "title": "Website Portofolio",
+      "desc": "Website portofolio interaktif berbasis React dengan alur tampilan halus dan desain responsif.",
+      "image": "/projects/portfolio-site.webp",
+      "type": "web",
+      "tags": ["React", "Tailwind", "Vite"],
+      "url": "https://portfolio.retiishia.my.id/"
+    },
+    {
+      "id": "old-portfolio-site",
+      "title": "Website Portofolio (Next.js)",
+      "desc": "Versi portofolio sebelumnya yang dibangun menggunakan Next.js untuk menampilkan proyek dan pengalaman kerja.",
+      "image": "/projects/oldportfolio-site.webp",
+      "type": "web",
+      "tags": ["Next.js", "React", "Tailwind"],
+      "url": "https://github.com/Retiishia/Portfolio-NextJS.git"
+    },
+    {
+      "id": "catapp-mobile",
+      "title": "Aplikasi Mobile CatApp",
+      "desc": "Aplikasi mobile berbasis Kotlin untuk menemukan dan memfilter ras kucing berdasarkan kriteria khusus.",
+      "image": "/projects/catapp-mobile.webp",
+      "type": "mobile",
+      "tags": ["Kotlin", "Gradle", "Bootstrap"],
+      "url": "https://github.com/Retiishia/CatApp-Kotlin"
+    },
+    {
+      "id": "cempor-site",
+      "title": "SPK Rekomendasi Cempor",
+      "desc": "Aplikasi sistem pendukung keputusan yang memberikan rekomendasi cempor berdasarkan preferensi pengguna.",
+      "image": "/projects/cempor-site.webp",
+      "type": "college",
+      "tags": ["Laravel", "PHP", "MySQL"],
+      "url": "https://github.com/Retiishia/spk-rekomendasi-cempor"
+    },
+    {
+      "id": "todo-list-site",
+      "title": "Aplikasi Web TODO List",
+      "desc": "Aplikasi daftar tugas produktif dengan antarmuka bersih untuk mengelola prioritas harian.",
+      "image": "/projects/todolist.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/todo-list-webapp"
+    },
+    {
+      "id": "calculator-site",
+      "title": "Aplikasi Web Kalkulator",
+      "desc": "Aplikasi kalkulator interaktif berbasis Vanilla JavaScript yang mendukung operasi aritmatika dasar.",
+      "image": "/projects/calculator-site.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/CalculatorJS"
+    },
+    {
+      "id": "weatherapp-js",
+      "title": "Weather App JavaScript",
+      "desc": "Aplikasi cuaca web berbasis JavaScript vanilla yang menyediakan update cuaca secara real-time.",
+      "image": "/projects/weatherapp-js.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/BasicWeatherJS"
+    },
+    {
+      "id": "quiz-site",
+      "title": "Aplikasi Web Quiz",
+      "desc": "Aplikasi kuis interaktif dengan pertanyaan pilihan ganda, pelacakan skor, dan antarmuka ramah pengguna.",
+      "image": "/projects/quizapp-js.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/QuizAppJS"
+    },
+    {
+      "id": "expense-tracker-site",
+      "title": "Expense Tracker Web App",
+      "desc": "Aplikasi pelacak pengeluaran sederhana untuk membantu mengelola dan memantau pengeluaran.",
+      "image": "/projects/expense-tracker-webapp.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/ExpenseTrackerJS"
+    },
+    {
+      "id": "movie-search-site",
+      "title": "Movies Search WebApp",
+      "desc": "Aplikasi pencarian film yang memungkinkan pengguna menjelajahi film dengan detail dan rating.",
+      "image": "/projects/movie-search-webapp.webp",
+      "type": "jsvanilla",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "url": "https://github.com/Retiishia/MovieSearch-JS"
+    }
+  ]
+}

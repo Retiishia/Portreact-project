@@ -1,0 +1,14 @@
+{
+  "label": "Tentang Saya",
+  "title": "Passionate Dalam Berkarya",
+  "subtitle": "Singkat cerita tentang siapa saya dan apa yang memotivasi saya membangun aplikasi web berkualitas",
+  "bio1": "Halo! Saya Farhan Aziz (Friz), seorang Web Developer dan Spesialis IT Support dari Bandung, Indonesia. Saya membuat situs web yang tidak hanya fungsional tetapi juga menarik secara visual.",
+  "bio2": "Semangat saya dalam pemrograman dan desain mendorong saya untuk terus belajar dan meningkatkan keterampilan, memberikan solusi kreatif dan efisien untuk setiap projek.",
+  "location": "Lokasi",
+  "locationVal": "Bandung, Indonesia",
+  "experience": "Pengalaman",
+  "experienceVal": "2+ Tahun",
+  "languages": "Bahasa",
+  "languagesVal": "Bahasa Indonesia, Inggris",
+  "downloadCv": "CV"
+}
